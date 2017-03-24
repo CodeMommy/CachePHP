@@ -9,7 +9,7 @@
 
 > CodeMommy CachePHP is a cache helper for web development.
 
-It helps you to operate cookie easily.
+It helps you to operate cache easily.
 
 Visit [CodeMommy Website](http://www.codemommy.com) or [Packagist](https://packagist.org/packages/CodeMommy/CachePHP) to get more information.
 
