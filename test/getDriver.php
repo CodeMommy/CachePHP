@@ -9,6 +9,6 @@ require_once(__DIR__ . '/../source/Cache.php');
 use CodeMommy\CachePHP\Cache;
 
 $config = require_once(__DIR__ . '/config.php');
-$cache = new Cache($config);
-$driver = $cache->getDriver();
+Cache::setConfig($config);
+$driver = Cache::getDriver();
 echo $driver->get($config['prefix'] . 'key');

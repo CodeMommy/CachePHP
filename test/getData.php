@@ -9,8 +9,8 @@ require_once(__DIR__ . '/../source/Cache.php');
 use CodeMommy\CachePHP\Cache;
 
 $config = require_once(__DIR__ . '/config.php');
-$cache = new Cache($config);
-$result = $cache->getData('key', $cache::TIMEOUT_ONE_MINUTE, function () {
+Cache::setConfig($config);
+$result = Cache::getData('key', Cache::TIMEOUT_ONE_MINUTE, function () {
     var_dump('No Cache');
     return 'OK';
 });

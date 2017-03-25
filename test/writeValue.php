@@ -9,5 +9,5 @@ require_once(__DIR__ . '/../source/Cache.php');
 use CodeMommy\CachePHP\Cache;
 
 $config = require_once(__DIR__ . '/config.php');
-$cache = new Cache($config);
-$cache->writeValue('key', 'value', Cache::TIMEOUT_ONE_MINUTE);
+Cache::setConfig($config);
+Cache::writeValue('key', 'value', Cache::TIMEOUT_ONE_MINUTE);
