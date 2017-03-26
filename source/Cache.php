@@ -94,7 +94,7 @@ class Cache
     {
         self::$config = is_array($config) ? $config : array();
         self::$prefix = isset(self::$config['prefix']) ? strval(self::$config['prefix']) : '';
-        self::$driver = null;
+        self::closeDriver();
     }
 
     /**
@@ -103,10 +103,13 @@ class Cache
      */
     public static function closeDriver()
     {
-        if (self::isDriver(self::DRIVER_REDIS)) {
-            return self::$driver->close();
+        if (self::$driver != null) {
+            if (self::isDriver(self::DRIVER_REDIS)) {
+                self::$driver->close();
+            }
         }
-        return false;
+        self::$driver = null;
+        return true;
     }
 
     /**

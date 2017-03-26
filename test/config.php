@@ -9,7 +9,7 @@ require_once(__DIR__ . '/../source/Cache.php');
 use CodeMommy\CachePHP\Cache;
 
 // Redis
-return array(
+$config = array(
     'driver'   => Cache::DRIVER_REDIS,
     'server'   => Cache::SERVER_LOCALHOST,
     'port'     => Cache::PORT_REDIS,
@@ -17,3 +17,5 @@ return array(
     'database' => 0,
     'prefix'   => 'CachePHP'
 );
+
+Cache::setConfig($config);
