@@ -1,7 +1,7 @@
 {
   "name": "codemommy/cachephp",
-  "version": "0.0.1",
-  "description": "Operate any cache system in one way",
+  "version": "0.0.3",
+  "description": "CodeMommy CachePHP is a cache helper for web development.",
   "keywords": [
     "CodeMommy",
     "CachePHP",

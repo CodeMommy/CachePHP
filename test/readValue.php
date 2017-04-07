@@ -5,9 +5,8 @@
  */
 
 require_once(__DIR__ . '/../source/Cache.php');
+require_once(__DIR__ . '/config.php');
 
 use CodeMommy\CachePHP\Cache;
 
-$config = require_once(__DIR__ . '/config.php');
-$cache = new Cache($config);
-echo $cache->readValue('key', 'default');
+echo Cache::readValue('key', 'default');
