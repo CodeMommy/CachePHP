@@ -7,9 +7,7 @@
 [![composer.lock Available](https://poser.pugx.org/CodeMommy/CachePHP/composerlock?format=flat-square)](https://packagist.org/packages/CodeMommy/CachePHP)
 
 
-> CodeMommy CachePHP is a cache helper for web development.
-
-It helps you to operate cache easily.
+> Operate any cache system in one way
 
 Visit [CodeMommy Website](http://www.codemommy.com) or [Packagist](https://packagist.org/packages/CodeMommy/CachePHP) to get more information.
 
