@@ -19,6 +19,7 @@ class Cache
     const TIMEOUT_ONE_MINUTE  = 60; // 1 * 60
     const TIMEOUT_ONE_HOUR    = 3600; // 1 * 60 * 60
     const TIMEOUT_ONE_DAY     = 86400; // 1 * 60 * 60 * 24
+    const TIMEOUT_ONE_WEEK    = 604800; // 1 * 60 * 60 * 24 * 7
     const TIMEOUT_ONE_MONTH   = 2592000; // 1 * 60 * 60 * 24 * 30
     const TIMEOUT_ONE_QUARTER = 7776000; // 1 * 60 * 60 * 24 * 90
     const TIMEOUT_ONE_YEAR    = 31536000; // 1 * 60 * 60 * 24 * 365
